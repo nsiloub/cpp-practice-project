@@ -2,10 +2,12 @@
 1781114855 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/practiceProject/main.cpp
 	<iostream>
 
-1781198571 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/main.cpp
-	"getBallPosition.h"
+1781444369 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/main.cpp
+	"getName.h"
+	"getAge.h"
 	"printText.h"
 	<iostream>
+	<string_view>
 
 1781183563 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/getBallPosition.cpp
 
@@ -22,12 +24,26 @@
 1781198503 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/getDistanceFallen.cpp
 	"getDistanceFallen.h"
 
-1781199106 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/printText.cpp
+1781442558 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/printText.cpp
 	"printText.h"
-	"getBallPosition.h"
+	<string_view>
 	<iostream>
 
 1781199256 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/getBallPosition.h
 
-1781197903 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/printText.h
+1781442023 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/printText.h
+	<string_view>
+
+1781440757 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/getAge.cpp
+	"getAge.h"
+
+1781440780 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/getAge.h
+	<iostream>
+
+1781441371 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/getName.cpp
+	"getName.h"
+
+1781441384 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/getName.h
+	<string>
+	<iostream>
 

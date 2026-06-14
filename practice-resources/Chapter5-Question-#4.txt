@@ -1,4 +1,4 @@
-## Question #4
+Question #4
 
 Write a program that asks for the name and age of two people, then prints which person is older.
 

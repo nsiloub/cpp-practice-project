@@ -2,9 +2,8 @@
 1781114855 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/practiceProject/main.cpp
 	<iostream>
 
-1781604941 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/main.cpp
+1781696043 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/main.cpp
 	<iostream>
-	<string_view>
 
 1781183563 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/getBallPosition.cpp
 
@@ -43,4 +42,15 @@
 1781441384 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/getName.h
 	<string>
 	<iostream>
+
+1781688703 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/goo.cpp
+
+1781691254 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/add.h
+
+1781691037 source:/home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/functions/add.cpp
+	"add.h"
+
+1781691740 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/circle.h
+
+1781691840 /home/nsiloub/Documents/coding-projects/cpp-projects/learncpp.com-practices/cpp-practice-project/headers/growth.h
 

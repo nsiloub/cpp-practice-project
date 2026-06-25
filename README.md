@@ -1,21 +1,27 @@
-# Question #2
+# Question #4
 
-Write a function named ``sumTo()`` that takes an integer parameter named value, and returns the sum of all the numbers from 1 to value.
+[Fizz Buzz](https://en.m.wikipedia.org/wiki/Fizz_buzz) is a simple math game used to teach children about divisibility. It is also sometimes used as an interview question to assess basic programming skills.
 
-For example, ``sumTo(5)`` should return 15, which is 1 + 2 + 3 + 4 + 5.
+The rules of the game are simple: Starting at 1, and counting upward, replace any number divisible only by three with the word “fizz”, any number only divisible by five with the word “buzz”, and any number divisible by both 3 and 5 with the word “fizzbuzz”.
 
-Hint: Use a non-loop variable to accumulate the sum as you iterate from 1 to the input value, much like the ``pow()`` example above uses the total variable to accumulate the return value each iteration.
+Implement this game inside a function named ```fizzbuzz()``` that takes a parameter determining what number to count up to. Use a for-loop and a single if-else chain (meaning you can use as many else-if as you like).
 
-
-
-### My Answer and solution:
-
-* I added the user input functionnality;
-* i added the feature to expand the operation:  
-from ```sumTo(n)```, i also displayed the ```1 +...n-1 + n```:  
+The output of ```fizzbuzz(15)``` should match the following:
 
 ```
-Enter an integer: 5
-The sum to 5 is 15
-Which is: [ 1 + 2 + 3 + 4 + 5 ]
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
 ```

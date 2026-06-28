@@ -1,27 +1,43 @@
 #include <iostream>
 
-void fizzbuzz(int value)
+void fizzbuzzpop(int value)
 {
-    for (int i { 1 }; i <= value; ++i)
+    for ( int i { 1 }; i <= value; ++i)
     {
-        if ( (i % 3 == 0) && (i % 5 == 0) )
-            std::cout << "fizzbuzz\n";
-        else if (i % 3 == 0)
-            std::cout << "fizz\n";
-        else if (i % 5 == 0)
-            std::cout << "buzz\n";
-        else
-            std::cout << i << '\n';
+        bool isDivisible { false };
+
+        if ( !(i % 3) )
+        {
+            std::cout << "fizz";
+            isDivisible = true;
+        }
+        if ( !(i % 5) )
+        {
+            std::cout << "buzz";
+            isDivisible = true;
+        }
+        if ( !(i % 7) )
+        {
+            std::cout << "pop";
+            isDivisible = true;
+        }
+
+
+        if ( !isDivisible )
+            std::cout << i;
+
+        std::cout << '\n';
     }
 }
 
+
 int main()
 {
-    std::cout << "Enter a positive (n > 0): ";
+    std::cout << "Enter a non-zero positive integer: ";
     int value {};
     std::cin >> value;
 
-    fizzbuzz(value);
+    fizzbuzzpop(value);
 
     return 0;
 }

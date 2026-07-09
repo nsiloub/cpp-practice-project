@@ -1,73 +1,49 @@
-# My thinking process (response):
-!["my-thinking-process.png"](./practice-resources/my-thinking-process-001.png)
+## Question #2
 
-<br>
-<hr><hr><hr>
-<br>
+A prime number is a natural number greater than 1 that is evenly divisible (with no remainder) only by 1 and itself.
 
-# The Question #1 (Assignment)
-
-In lesson [4.x -- Chapter 4 summary and quiz](https://www.learncpp.com/cpp-tutorial/chapter-4-summary-and-quiz/), we wrote a program to simulate a ball falling off of a tower. Because we didn’t have loops yet, the ball could only fall for 5 seconds.
-
-Take the program below and modify it so that the ball falls for as many seconds as needed until it reaches the ground. Update the program to use all covered best practices (namespaces, constexpr, etc…).
+Complete the following program by writing the ```isPrime()``` function using a for-loop. When successful, the program will print “Success!”.
 
 ```cpp
+// Make sure that assert triggers even if we compile in release mode
+#undef NDEBUG
+
+#include <cassert> // for assert
 #include <iostream>
 
-// Gets tower height from user and returns it
-double getTowerHeight()
+bool isPrime(int x)
 {
-	std::cout << "Enter the height of the tower in meters: ";
-	double towerHeight{};
-	std::cin >> towerHeight;
-	return towerHeight;
-}
-
-// Returns the current ball height after "seconds" seconds
-double calculateBallHeight(double towerHeight, int seconds)
-{
-	const double gravity { 9.8 };
-
-	// Using formula: s = (u * t) + (a * t^2) / 2
-	// here u (initial velocity) = 0, so (u * t) = 0
-	const double fallDistance { gravity * (seconds * seconds) / 2.0 };
-	const double ballHeight { towerHeight - fallDistance };
-
-	// If the ball would be under the ground, place it on the ground
-	if (ballHeight < 0.0)
-		return 0.0;
-
-	return ballHeight;
-}
-
-// Prints ball height above ground
-void printBallHeight(double ballHeight, int seconds)
-{
-	if (ballHeight > 0.0)
-		std::cout << "At " << seconds << " seconds, the ball is at height: " << ballHeight << " meters\n";
-	else
-		std::cout << "At " << seconds << " seconds, the ball is on the ground.\n";
-}
-
-// Calculates the current ball height and then prints it
-// This is a helper function to make it easier to do this
-void calculateAndPrintBallHeight(double towerHeight, int seconds)
-{
-	const double ballHeight{ calculateBallHeight(towerHeight, seconds) };
-	printBallHeight(ballHeight, seconds);
+    return false;
+    // write this function using a for loop
 }
 
 int main()
 {
-	const double towerHeight{ getTowerHeight() };
+    assert(!isPrime(0)); // terminate program if isPrime(0) is true
+    assert(!isPrime(1));
+    assert(isPrime(2));  // terminate program if isPrime(2) is false
+    assert(isPrime(3));
+    assert(!isPrime(4));
+    assert(isPrime(5));
+    assert(isPrime(7));
+    assert(!isPrime(9));
+    assert(isPrime(11));
+    assert(isPrime(13));
+    assert(!isPrime(15));
+    assert(!isPrime(16));
+    assert(isPrime(17));
+    assert(isPrime(19));
+    assert(isPrime(97));
+    assert(!isPrime(99));
+    assert(isPrime(13417));
 
-	calculateAndPrintBallHeight(towerHeight, 0);
-	calculateAndPrintBallHeight(towerHeight, 1);
-	calculateAndPrintBallHeight(towerHeight, 2);
-	calculateAndPrintBallHeight(towerHeight, 3);
-	calculateAndPrintBallHeight(towerHeight, 4);
-	calculateAndPrintBallHeight(towerHeight, 5);
+    std::cout << "Success!\n";
 
-	return 0;
+    return 0;
 }
 ```
+
+<br>
+
+> ### Related content
+> assert is a preprocessor macro that terminates the program if the associated argument evaluates to false. So when we write ```assert(!isPrime(0))```, we’re meaning “if isPrime(0) is true, then terminate the program”. We cover assert in more detail in lesson [9.6 -- Assert and static_assert](https://www.learncpp.com/cpp-tutorial/assert-and-static_assert/).

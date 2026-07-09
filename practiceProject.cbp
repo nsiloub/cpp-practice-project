@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="headers" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -36,22 +37,31 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</UnitsGlob>
-		<Unit filename="functions/GetBallPosition.cpp">
+		<Unit filename="functions/constant.cpp">
 			<Option glob="1407010674" />
 		</Unit>
-		<Unit filename="functions/PrintBallPosition.cpp">
+		<Unit filename="functions/isComposite.cpp">
 			<Option glob="1407010674" />
 		</Unit>
-		<Unit filename="functions/constants.cpp">
+		<Unit filename="functions/isDivisibleByPrimes.cpp">
 			<Option glob="1407010674" />
 		</Unit>
-		<Unit filename="headers/GetBallPosition.h">
+		<Unit filename="functions/normalizePrimeToNum.cpp">
 			<Option glob="1407010674" />
 		</Unit>
-		<Unit filename="headers/PrintBallPosition.h">
+		<Unit filename="headers/Constants.h">
 			<Option glob="1407010674" />
 		</Unit>
-		<Unit filename="headers/constants.h">
+		<Unit filename="headers/isComposite.h">
+			<Option glob="1407010674" />
+		</Unit>
+		<Unit filename="headers/isDivisibleByPrimes.h">
+			<Option glob="1407010674" />
+		</Unit>
+		<Unit filename="headers/normalizePrimeToNum.h">
+			<Option glob="1407010674" />
+		</Unit>
+		<Unit filename="headers/numLength.h">
 			<Option glob="1407010674" />
 		</Unit>
 		<Unit filename="main.cpp">

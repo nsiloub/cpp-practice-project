@@ -92,7 +92,10 @@ tags
 # End of https://www.toptal.com/developers/gitignore/api/c++,vim,linux,cmake
 
 
-
+# Additional Ignores
 src/Sources/__dummy.cpp
 include/Config.h
 include/Config.h.in
+build
+bin
+
